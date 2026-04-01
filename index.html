@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Rock Paper Scissors Game</h1>
-    <p>Choose your move:</p>
-    <button onclick="play('rock')">Rock</button>
-    <button onclick="play('paper')">Paper</button>
-    <button onclick="play('scissors')">Scissors</button>
-    <p id="result"></p>
+    <div class="container">
+      <h1>Rock x Paper x Scissors</h1>
+
+      <div class="choices">
+        <button class="btn" onclick="play('rock')">🪨</button>
+        <button class="btn" onclick="play('paper')">📄</button>
+        <button class="btn" onclick="play('scissors')">✂️</button>
+      </div>
+
+      <div class="result" id="result">Make your move!</div>
+
+      <div class="score">
+        <span> You: <span id="userScore">0</span></span>
+        <span> Bot: <span id="botScore">0</span></span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
