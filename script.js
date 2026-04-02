@@ -1,6 +1,7 @@
 let userScore = 0,
   botScore = 0;
 let gameOver = false;
+let isPlaying = false;
 const emojis = { rock: "🪨", paper: "📄", scissors: "✂️" };
 
 function setButtonsDisabled(disabled) {
@@ -8,7 +9,8 @@ function setButtonsDisabled(disabled) {
 }
 
 function startRound(userChoice) {
-  if (gameOver) return;
+  if (gameOver || isPlaying) return;
+  isPlaying = true;
   let count = 3;
   const countdownEl = document.getElementById("countdown");
   countdownEl.textContent = count;
@@ -75,12 +77,15 @@ function play(userChoice) {
   }
 
   resultDiv.textContent = result;
+
+  isPlaying = false;
 }
 
 function resetGame() {
   userScore = 0;
   botScore = 0;
   gameOver = false;
+  isPlaying = false;
   document.getElementById("userScore").textContent = 0;
   document.getElementById("botScore").textContent = 0;
   document.getElementById("playerPick").textContent = "?";
