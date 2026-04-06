@@ -1,10 +1,11 @@
-Good README includes:
+Made by jerekscxz
 
-Project title: Clear name describing what the project is
-Brief description: What is it? Why did you build it?
-How to compile/build: Instructions for setup (gcc, javac, python, npm, etc.)
-How to run: Instructions to execute your program or tests
-Features: What your program can do
-Requirements: What needs to be installed (compiler, runtime, libraries, etc.)
+The title of this website is Rock Paper and Scissors Game, the mechanics of this game is choosing among the three(rock, paper, scissors), then if you choose scissors against paper you win, if you choose scissors against the rock you lose, if you choose paper against the rock you also wins, if both of you choose the same it's draw.
 
-I'm making this for my project
+Rock > Scissors
+Scissors > Paper
+Paper > Rock
+
+This website is build for our midterm project in Frontend Development 2, beside this game is also made for mastering javascript.
+
+Thankyou!
